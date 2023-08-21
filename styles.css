@@ -46,6 +46,9 @@ body {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
 
+        height: 100%;
+        width: 100%;
+
         color: white;
         font-size: 45px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
