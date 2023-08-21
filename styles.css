@@ -54,8 +54,9 @@ body {
         letter-spacing: -3px;
         word-spacing: -3px;
 
-        position: relative;
-        right: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .icon {
