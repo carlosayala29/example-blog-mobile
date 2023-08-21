@@ -9,11 +9,11 @@ body {
         
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 200px auto 150px;
+        grid-template-rows: 150px auto 100px;
     }
     
     .header {
-        height: 200px;
+        height: 150px;
         width: 100%;
 
         grid-column: 1 / 2;
@@ -27,6 +27,10 @@ body {
         background-color: orange;
         z-index: 1;
         position: fixed;
+
+        border-bottom-style: solid;
+        border-bottom-width: 2.3px;
+        border-bottom-color: gray;
     }
  
     .nav-mobiles {
@@ -43,23 +47,26 @@ body {
     }
 
     .h1-header {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-
-        height: 100%;
-        width: 100%;
 
         color: white;
-        font-size: 45px;
+        font-size: 60px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
         text-align: center;
         letter-spacing: -3px;
         word-spacing: -3px;
 
+        position: relative;
+        right: 9%;
+    }
+
+    .h1-div {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
     }
 
     .icon {
@@ -67,6 +74,9 @@ body {
         transition: transform 0.3s;
 
         color: white;
+
+        height: 25px;
+        width: 25px;
     }
 
     .rotate-90 {
@@ -81,7 +91,7 @@ body {
         display: none;
     }
     
-    .section {
+    .main {
         height: 100%;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
@@ -91,6 +101,10 @@ body {
 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: justify;
+    }
+
+    .article {
+        padding-right: 15px;
     }
 
     .article h1 {
@@ -108,7 +122,7 @@ body {
     }
     
     .footer {
-        height: 150px;
+        height: 100px;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
 
